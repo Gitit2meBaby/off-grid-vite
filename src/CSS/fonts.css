@@ -1,0 +1,56 @@
+/* Open Sans */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../fonts/OpenSans-Bold.ttf') format('truetype');
+    /* Add other font formats if necessary (e.g., woff, woff2) */
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Amiko Regular */
+@font-face {
+    font-family: 'Amiko';
+    src: url('../../fonts/Amiko-Regular.ttf') format('truetype');
+    /* Add other font formats if necessary (e.g., woff, woff2) */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Amiko Semi-Bold */
+@font-face {
+    font-family: 'Amiko';
+    src: url('../../fonts/Amiko-SemiBold.ttf') format('truetype');
+    /* Add other font formats if necessary (e.g., woff, woff2) */
+    font-weight: 600;
+    /* Semi-Bold font weight */
+    font-style: normal;
+}
+
+/* Hind Guntur Regular */
+@font-face {
+    font-family: 'Hind Guntur';
+    src: url('../../fonts/HindGuntur-Regular.ttf') format('truetype');
+    /* Add other font formats if necessary (e.g., woff, woff2) */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Hind Guntur Medium */
+@font-face {
+    font-family: 'Hind Guntur';
+    src: url('../../fonts/HindGuntur-Medium.ttf') format('truetype');
+    /* Add other font formats if necessary (e.g., woff, woff2) */
+    font-weight: 500;
+    /* Medium font weight */
+    font-style: normal;
+}
+
+/* Hind Guntur Semi-Bold */
+@font-face {
+    font-family: 'Hind Guntur';
+    src: url('../../fonts/HindGuntur-SemiBold.ttf') format('truetype');
+    /* Add other font formats if necessary (e.g., woff, woff2) */
+    font-weight: 600;
+    /* Semi-Bold font weight */
+    font-style: normal;
+}
