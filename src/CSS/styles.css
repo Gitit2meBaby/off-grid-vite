@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Font1';
-    src: url('./fonts/Amiko-Bold.ttf') format('truetype'),
-        url('./fonts/Amiko-SemiBold.ttf') format('truetype'),
-        url('./fonts/Amika-Regular.ttf') format('truetype'),
-        url('./fonts/HindGuntur-Bold.ttf') format('truetype'),
-        url('./fonts/HindGuntur-Regular.ttf') format('truetype'),
-        url('./fonts/HindGuntur-SemiBold.ttf') format('truetype'),
-        url('./fonts/OpenSans-Bold.ttf') format('truetype');
+    src: url('Amiko-Bold.ttf') format('truetype'),
+        url('Amiko-SemiBold.ttf') format('truetype'),
+        url('Amika-Regular.ttf') format('truetype'),
+        url('HindGuntur-Bold.ttf') format('truetype'),
+        url('HindGuntur-Regular.ttf') format('truetype'),
+        url('HindGuntur-SemiBold.ttf') format('truetype'),
+        url('OpenSans-Bold.ttf') format('truetype');
     font-weight: 400, 500, 700;
     font-style: normal;
 }
