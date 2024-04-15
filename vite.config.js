@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
     build: {
+        base: '/off-grid-power/',
         outDir: 'dist', // Output files directly into the 'dist' directory
         rollupOptions: {
             input: {
