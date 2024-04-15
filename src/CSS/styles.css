@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Font1';
-    src: url('Amiko/Amiko-Bold.ttf') format('truetype'),
-        url('Amiko/Amiko-SemiBold.ttf') format('truetype'),
-        url('Amiko/Amiko-Regular.ttf') format('truetype'),
-        url('Hind_Guntur/HindGuntur-Bold.ttf') format('truetype'),
-        url('AHind_Guntur/HindGuntur-Regular.ttf') format('truetype'),
-        url('Hind_Guntur/HindGuntur-SemiBold.ttf') format('truetype'),
-        url('Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
+    src: url('./fonts/Amiko-Bold.ttf') format('truetype'),
+        url('./fonts/Amiko-SemiBold.ttf') format('truetype'),
+        url('./fonts/Amika-Regular.ttf') format('truetype'),
+        url('./fonts/HindGuntur-Bold.ttf') format('truetype'),
+        url('./fonts/HindGuntur-Regular.ttf') format('truetype'),
+        url('./fonts/HindGuntur-SemiBold.ttf') format('truetype'),
+        url('./fonts/OpenSans-Bold.ttf') format('truetype');
     font-weight: 400, 500, 700;
     font-style: normal;
 }
@@ -73,16 +73,12 @@ body {
     gap: .5rem;
 }
 
-.phone p,
+.phone a,
 .email p {
     margin: 0;
     font-size: .8rem;
     color: var(--whiteText);
-}
-
-.email p:hover {
     cursor: pointer;
-    font-weight: 700;
 }
 
 /* bottom split */
@@ -253,6 +249,7 @@ header {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../assets/hero1920.webp');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 50% 1fr;
     padding: 9dvh 4vw 0 12vw;
@@ -327,6 +324,8 @@ header {
         height: 50vh;
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../assets/hero700.webp');
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: grid;
         padding: 9dvh 4vw 0 12vw;
     }
@@ -1174,8 +1173,10 @@ a {
     gap: 2vh;
 }
 
+.phone a:hover,
 .email p:hover {
     color: var(--green);
+    font-weight: 700;
 }
 
 .mini-nav {

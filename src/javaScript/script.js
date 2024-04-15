@@ -47,21 +47,18 @@ document.addEventListener("DOMContentLoaded", function () {
         slideRightObserver.observe(element);
     });
 
-
-
     /// COUNTERS
     const counterElements = document.querySelectorAll('.counter');
 
     function updateCounter(countSpan, targetNumber, currentCount) {
-        const step = currentCount < 1000 ? 1 : Math.ceil(targetNumber / 1000);
+        const maxInterval = 2500; // Maximum interval in milliseconds
+        const step = Math.ceil(targetNumber / (maxInterval / 16.67)); // Calculate the step based on the target number and maximum interval
         const newCount = Math.min(currentCount + step, targetNumber);
 
         countSpan.textContent = newCount;
 
         if (newCount < targetNumber) {
-            const timeoutInterval = Math.max(1, Math.floor(1000 / currentCount));
-
-            setTimeout(() => updateCounter(countSpan, targetNumber, newCount), timeoutInterval);
+            requestAnimationFrame(() => updateCounter(countSpan, targetNumber, newCount));
         }
     }
 

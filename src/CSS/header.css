@@ -59,16 +59,12 @@ body {
     gap: .5rem;
 }
 
-.phone p,
+.phone a,
 .email p {
     margin: 0;
     font-size: .8rem;
     color: var(--whiteText);
     cursor: pointer;
-}
-
-.email p:hover {
-    font-weight: 700;
 }
 
 /* bottom split */
@@ -413,8 +409,10 @@ header {
     gap: 2vh;
 }
 
+.phone a:hover,
 .email p:hover {
     color: var(--green);
+    font-weight: 700;
 }
 
 .mini-nav {
